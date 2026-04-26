@@ -75,47 +75,47 @@
     const { useState, useEffect, useRef } = React;
 
     const validAnswers = [
-      "abderrahmane", "ayab", "abdou", "abodi", "aboudi", "daddy", "dodo",
-      "عبد الرحمان", "عبدو", "عبدرحمان", "دادي", "دادي عبدالرحمان",
-      "كتكوتي", "بسبوس", "مشموش", "mommy's boy", "mommy's good boy",
-      "my good boy", "good boy", "
-    ];
+  "abderrahmane", "ayab", "abdou", "abodi", "aboudi", "daddy", "dodo",
+  "عبد الرحمان", "عبدو", "عبدرحمان", "دادي", "دادي عبدالرحمان",
+  "كتكوتي", "بسبوس", "مشموش", "mommy's boy", "mommy's good boy",
+  "my good boy", "good boy",
+];
 
     const romanticMessages = [
-      "✨Mommy✨"
-      "انتي احلى حاجة صراتلي ✨",
-      "ضحكتك تسوى الدنيا وما فيها 😍",
-      "My beautiful princess 👑💖"
-    "You look like trouble… and I’m already involved 😏🔥",
-"ماشي عادي هذا التأثير لي عندك 🥺💘",
-"I swear you’re distracting me on purpose 😤💞",
-"راك temptation بصح ما نحبش نهرب منك 😌✨",
-"You + me? yeah… that’s a dangerous combo 💣❤️",
-"كي نشوفك نولي ما نركزش 😳💓",
-"I think you're secretly controlling my thoughts 😵‍💫💭",
-"راك تضحك… وانا نضيع 🫠💗",
-"If I get closer… it’s game over for me 😮‍💨🔥",
-"ما نقدرش نكون normal معاك 😩💞",
-"You don’t even try and still look this good? 😤💖",
-"راك تدخل وتسرق الانتباه كامل 😌✨",
-"I should stay away… but I really don’t want to 😏❤️",
-"راك تخلي الواحد يتهور بلا سبب 🥺🔥",
-"You’re not helping me behave… at all 😈💓",
-"وجودك وحدو dangerous عليا 😳💣",
-"I think I’m getting addicted to you already 😵‍💫💘",
-"راك مشكل… وأنا حاب هذا المشكل 😌💖",
-"You’re literally my favorite distraction 💭💕",
-"راك تخلي الابتسامة تجي وحدها 😊💞",
-"If flirting was illegal, you'd be in jail for life 😏🚔💗",
-"ما نعرفش كيفاه… بصح راك تأثر فيا بزاف 🥺💓",
-"You’re playing with fire… and I’m enjoying it 🔥😉",
-"راك حاجة special ما تتعاودش 💖✨",
-"I’m not flirting… I’m just being honest 😌💘",
-"كي نسمع اسمك قلبي يدير skip 💓😳",
-"You’re dangerously charming… it’s unfair 😤💕",
-"راك تخلي كلشي يولي secondary 😩💞",
-"I don’t think you realize how attractive you are 😮‍💨💖"
-    ];
+  "✨Mommy✨",
+  "انتي احلى حاجة صراتلي ✨",
+  "ضحكتك تسوى الدنيا وما فيها 😍",
+  "My beautiful princess 👑💖",
+  "You look like trouble… and I’m already involved 😏🔥",
+  "ماشي عادي هذا التأثير لي عندك 🥺💘",
+  "I swear you’re distracting me on purpose 😤💞",
+  "راك temptation بصح ما نحبش نهرب منك 😌✨",
+  "You + me? yeah… that’s a dangerous combo 💣❤️",
+  "كي نشوفك نولي ما نركزش 😳💓",
+  "I think you're secretly controlling my thoughts 😵‍💫💭",
+  "راك تضحك… وانا نضيع 🫠💗",
+  "If I get closer… it’s game over for me 😮‍💨🔥",
+  "ما نقدرش نكون normal معاك 😩💞",
+  "You don’t even try and still look this good? 😤💖",
+  "راك تدخل وتسرق الانتباه كامل 😌✨",
+  "I should stay away… but I really don’t want to 😏❤️",
+  "راك تخلي الواحد يتهور بلا سبب 🥺🔥",
+  "You’re not helping me behave… at all 😈💓",
+  "وجودك وحدو dangerous عليا 😳💣",
+  "I think I’m getting addicted to you already 😵‍💫💘",
+  "راك مشكل… وأنا حاب هذا المشكل 😌💖",
+  "You’re literally my favorite distraction 💭💕",
+  "راك تخلي الابتسامة تجي وحدها 😊💞",
+  "If flirting was illegal, you'd be in jail for life 😏🚔💗",
+  "ما نعرفش كيفاه… بصح راك تأثر فيا بزاف 🥺💓",
+  "You’re playing with fire… and I’m enjoying it 🔥😉",
+  "راك حاجة special ما تتعاودش 💖✨",
+  "I’m not flirting… I’m just being honest 😌💘",
+  "كي نسمع اسمك قلبي يدير skip 💓😳",
+  "You’re dangerously charming… it’s unfair 😤💕",
+  "راك تخلي كلشي يولي secondary 😩💞",
+  "I don’t think you realize how attractive you are 😮‍💨💖"
+];
 
     // Reusable Button Component
     const Button = ({ onClick, children, disabled, className = "" }) => (
